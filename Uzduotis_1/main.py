@@ -25,5 +25,18 @@ users = [
     { 'id': '9', 'name': 'Daniel Cane', 'age': 15, 'hasDog': False, 'hasCat': False },
 ]
 #1
-def filter_all_or_nothing_people():
+#def filter_all_or_nothing_people(users):
     
+
+
+#2
+def filter_underaged_owners(users):
+    filteredList = []
+    for user in users:
+        if user['age'] < 18:
+            if user['hasDog'] == True or user['hasCat'] == True:
+                filteredList.append(user)
+            else:
+                continue
+        return filteredList
+filter_underaged_owners(users)

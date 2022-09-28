@@ -13,4 +13,7 @@ audi = {
 }
 
 def get_dict_values(audi):
+  '''Funkcija pasiima audi zodyna ir pavercia ji i sarasa'''
+  return list(audi.values())
 
+print(get_dict_values(audi))

@@ -1,6 +1,10 @@
 # Importuokite reikiamus modulius, kad veiktų žemiau nurodytos funkcijos:
 
 # Kitų failų ir žemiau esančio kodo nekeiskite
+
+from math import add, divide, multiply, subtract
+
+
 a = add(integers.one, integers.four)
 b = divide(integers.four, integers.two)
 c = subtract(integers.three, integers.two)
