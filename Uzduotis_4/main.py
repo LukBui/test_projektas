@@ -16,3 +16,15 @@
 # * was_expensive() - jeigu filmo "budget" yra daugiau nei 100 mln. USD,
 #   grąžins True, kitu atveju - False.
 
+class Movie:
+    '''Klase parodanti filmo pavadinima, direktoriu ir biudzeta'''
+    def __init__(self, title, director, budget):
+        self.title = title
+        self.director = director
+        self.budget = budget
+    def was_expensive(budget):
+        '''Parodo ar filmo biudzetas daugiau nei 100 mln.'''
+        if budget > 100000000:
+            return True
+
+movie = Movie('Titanikas', 'Vinas Dyzelis', 15000)

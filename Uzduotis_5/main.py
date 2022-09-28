@@ -2,8 +2,7 @@
 
 # Kitų failų ir žemiau esančio kodo nekeiskite
 
-from math import add, divide, multiply, subtract
-
+from math import add, divide, multiply, subtract, integers
 
 a = add(integers.one, integers.four)
 b = divide(integers.four, integers.two)

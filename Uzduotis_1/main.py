@@ -24,19 +24,27 @@ users = [
     { 'id': '8', 'name': 'Simon Peterson', 'age': 32, 'hasDog': False, 'hasCat': True },
     { 'id': '9', 'name': 'Daniel Cane', 'age': 15, 'hasDog': False, 'hasCat': False },
 ]
-#1
-#def filter_all_or_nothing_people(users):
-    
 
+#1
+def filter_all_or_nothing_people(users):
+    '''Grazina zmones kurie turi du arba nei vieno gyvuno'''
+    res = []
+    for user in users:
+        if user['hasDog'] == False and user['hasCat'] == False:
+            res.append(user)
+        if user['hasDog'] == True and user['hasCat'] == True:
+            res.append(user)
+        else:
+            continue
+    return res
 
 #2
 def filter_underaged_owners(users):
-    filteredList = []
+    '''Grazina pilnamecius, turincius bent viena gyvuna'''
+    res = []
     for user in users:
-        if user['age'] < 18:
-            if user['hasDog'] == True or user['hasCat'] == True:
-                filteredList.append(user)
-            else:
-                continue
-        return filteredList
-filter_underaged_owners(users)
+        if user['age'] >= 18 and (user['hasDog'] == True or user['hasCat'] == True):
+            res.append(user)
+        else:
+            continue
+    return res
