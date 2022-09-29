@@ -28,7 +28,7 @@ users = [
 ]
 
 #1 
-def get_user_average_age():
+def get_user_average_age(users):
   sum(users.age)/len(users.age)
 
 
@@ -36,4 +36,4 @@ print('Vidurkis:', round(get_user_average_age()))
 
 
 #2
-# def get_users_names()
+# def get_users_names(users)
