@@ -38,13 +38,18 @@ def filter_all_or_nothing_people(users):
             continue
     return res
 
+# print(filter_all_or_nothing_people(users))
+
+
 #2
 def filter_underaged_owners(users):
     '''Grazina pilnamecius, turincius bent viena gyvuna'''
     res = []
     for user in users:
-        if user['age'] >= 18 and (user['hasDog'] == True or user['hasCat'] == True):
+        if user['age'] < 18 and (user['hasDog'] == True or user['hasCat'] == True):
             res.append(user)
         else:
             continue
     return res
+
+# print(filter_underaged_owners(users))

@@ -29,11 +29,20 @@ users = [
 
 #1 
 def get_user_average_age(users):
-  sum(users.age)/len(users.age)
+  '''Funkcija grazina vartotoju amziaus vidurki'''
+  age = 0
+  for user in users:
+    age += user['age']
+  return round(age/len(users))
 
-
-print('Vidurkis:', round(get_user_average_age()))
-
+# print(get_user_average_age(users))
 
 #2
-# def get_users_names(users)
+def get_users_names(users):
+  '''Funkcija sudelioja vartotoju vardus pagal abc'''
+  filteredList = []
+  for user in users:
+    filteredList.append(user['name'])
+  return sorted(filteredList)
+
+# print(get_users_names(users))

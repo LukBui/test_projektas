@@ -23,7 +23,7 @@ class Movie:
         self.director = director
         self.budget = budget
     def was_expensive(budget):
-        '''Parodo ar filmo biudzetas daugiau nei 100 mln.'''
+        '''Patikrina ar filmo biudzetas daugiau nei 100 mln.'''
         if budget > 100000000:
             return True
 
